@@ -15,6 +15,13 @@
       "when": 1715863623986,
       "tag": "0001_bouncy_thor_girl",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716565001520,
+      "tag": "0002_careful_crystal",
+      "breakpoints": true
     }
   ]
 }
