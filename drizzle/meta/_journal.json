@@ -22,6 +22,13 @@
       "when": 1716565001520,
       "tag": "0002_careful_crystal",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1716737843442,
+      "tag": "0003_amazing_silvermane",
+      "breakpoints": true
     }
   ]
 }
