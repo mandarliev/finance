@@ -25,6 +25,7 @@ type FormValues = z.input<typeof formSchema>;
 export const NewTransactionSheet = () => {
   const { isOpen, onClose } = useNewTransaction();
   const createMutation = useCreateTransaction();
+  
   const categoryMutation = useCreateCategory();
   const categoryQuery = useGetCategories();
   const onCreateCategory = (name: string) => categoryMutation.mutate({ name });
