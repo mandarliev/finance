@@ -6,7 +6,6 @@ import { zValidator } from "@hono/zod-validator";
 import { subDays, parse, differenceInDays } from "date-fns";
 import { and, eq, gte, lte, sql, sum, lt, desc } from "drizzle-orm";
 import { Hono } from "hono";
-import { start } from "repl";
 import { z } from "zod";
 
 const app = new Hono().get(
@@ -74,8 +73,8 @@ const app = new Hono().get(
     );
     const [lastPeriod] = await fetchFinancialData(
       auth.userId,
-      startDate,
-      endDate
+      lastPeriodStart,
+      lastPeriodEnd
     );
 
     const incomeChange = calculatePercentageChange(
