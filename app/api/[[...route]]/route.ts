@@ -5,6 +5,7 @@ import categories from "./categories";
 import transactions from "./transactions";
 import summary from "./summary";
 import plaid from "./plaid";
+import subscriptions from "./subscriptions";
 
 export const runtime = "nodejs";
 
@@ -15,7 +16,8 @@ const routes = app
   .route("/accounts", accounts)
   .route("/categories", categories)
   .route("/transactions", transactions)
-  .route("/summary", summary);
+  .route("/summary", summary)
+  .route("/subscriptions", subscriptions);
 
 export const GET = handle(app);
 export const POST = handle(app);
